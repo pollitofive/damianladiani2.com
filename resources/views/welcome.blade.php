@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>BreezyCV - Resume / CV / vCard Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="BreezyCV - Resume / CV / vCard Template" />
-    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
-    <meta name="author" content="lmpixels" />
-    <link rel="shortcut icon" href="favicon.ico">
+    <title>@if(env('APP_ENV') != 'local')
+            damianladiani.com
+        @else
+            damianladiani2.test
+        @endif</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="description" content="BreezyCV - Resume / CV / vCard Template"/>
+    <meta name="keywords"
+          content="laravel, resume, mysql, PHP, javascript, vue.js, bootstrap, portfolio, livewire, tailwind"/>
+    <link rel="shortcut icon" href="{{ url('img/favicon.png') }}">
 
 
     <link rel="stylesheet" href="{{ url('css/reset.css') }}" type="text/css">
@@ -18,6 +22,7 @@
     <link rel="stylesheet" href="{{ url('css/owl.carousel.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ url('css/magnific-popup.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ url('css/main.css') }}" type="text/css">
+    @livewireStyles
 </head>
 
 <body>
@@ -36,11 +41,9 @@
 
 <div class="page">
     <div class="page-content">
+        @include('header')
 
-        @include('header.header')
-
-
-        @include('content\content')
+        @include('content')
     </div>
 </div>
 
@@ -59,5 +62,6 @@
 <script src="{{ url('js/jquery.googlemap.js') }}"></script>
 <script src="{{ url('js/validator.js') }}"></script>
 <script src="{{ url('js/main.js') }}"></script>
+@livewireScripts
 </body>
 </html>
