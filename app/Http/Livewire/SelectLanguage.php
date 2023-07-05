@@ -20,8 +20,9 @@ class SelectLanguage extends Component
         return view('livewire.select-language');
     }
 
-    public function updateLanguage() : void
+    public function updateLanguage()
     {
         Session::put('locale',$this->select);
+        return redirect(request()->header('Referer'));
     }
 }

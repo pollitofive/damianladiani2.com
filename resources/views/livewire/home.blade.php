@@ -6,14 +6,14 @@
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <div class="title-block">
-                        <h2>Damián Ladiani</h2>
+                        <h2>{{ __('home.fullname') }}</h2>
                         <div class="owl-carousel text-rotation">
                             <div class="item">
-                                <div class="sp-subtitle">Laravel Developer</div>
+                                <div class="sp-subtitle">{{ __('home.profession1') }}</div>
                             </div>
 
                             <div class="item">
-                                <div class="sp-subtitle">PHP Developer</div>
+                                <div class="sp-subtitle">{{ __('home.profession2') }}</div>
                             </div>
                         </div>
                     </div>

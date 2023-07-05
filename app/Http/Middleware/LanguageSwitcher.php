@@ -18,9 +18,9 @@ class LanguageSwitcher
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (! Session::has('locale'))
+        if (! session()->get('locale'))
         {
-            Session::put('locale',Config::get('app.locale'));
+            session()->set('locale',Config::get('app.locale'));
         }
         App::setLocale(session('locale'));
         return $next($request);
