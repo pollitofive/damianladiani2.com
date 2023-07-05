@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
 use Illuminate\View\View;
@@ -20,7 +21,7 @@ class SelectLanguage extends Component
         return view('livewire.select-language');
     }
 
-    public function updateLanguage()
+    public function updateLanguage() : Redirector
     {
         Session::put('locale',$this->select);
         return redirect(request()->header('Referer'));

@@ -2,14 +2,13 @@
 
 namespace App\Http\Livewire;
 
-use App\Traits\UpdateLanguage;
-use Illuminate\Support\Facades\App;
+use Illuminate\View\View;
 use Livewire\Component;
 
 class HeaderContent extends Component
 {
 //    use UpdateLanguage;
-    public function render()
+    public function render() : View
     {
         return view('livewire.header-content');
     }
