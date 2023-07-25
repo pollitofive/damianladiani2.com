@@ -15,4 +15,5 @@ return [
     'valid-email-is-required' => 'Valid email is required.',
     'subject-is-required' => 'Subject is required.',
     'message-is-required' => 'Please leave me a message.',
+    'message-sent' => 'Message sent successfully',
 ];

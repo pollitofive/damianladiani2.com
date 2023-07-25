@@ -21,7 +21,7 @@
             </div>
             @if(Session::has('success'))
                 <div id="message-sent" class="message-sent">
-                    Message sent successfully
+                    {{ Session::get('success') }}
                 </div>
             @endif
         </div>

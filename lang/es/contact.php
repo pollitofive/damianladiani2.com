@@ -15,4 +15,6 @@ return [
     'valid-email-is-required' => 'Un mail válido es requerido.',
     'subject-is-required' => 'El asunto es requerido.',
     'message-is-required' => 'Por favor, escribe tu mensaje.',
+    'message-sent' => 'Mensaje enviado correctamente',
+
 ];
