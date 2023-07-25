@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DownloadCVController;
+use App\Http\Controllers\SendEmailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,20 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('download/{locate}', DownloadCVController::class)->name('download');
+Route::post('contact',SendEmailController::class)->name('contact');
+
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('page');
 });
 
-Route::post('contact',function(){
-    request()->validate([
-        'name' => 'required',
-        'email' => 'required',
-        'subject' => 'required',
-        'message' => 'required'
-    ]);
 
-    $headers = 'From: ' . request()->name . ' - ' . request()->email  . "\r\n";
-
-    mail('damianladiani@gmail.com','Message from contact form',request()->message, $headers);
-    return back()->with('success','Message sent successfully');
-})->name('contact');
