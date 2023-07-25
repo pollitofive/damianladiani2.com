@@ -479,7 +479,7 @@ input[type="submit"]:focus {
 /* --- End Social Links --- */
 
 .header-buttons {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .header-buttons .btn-primary {
@@ -2947,10 +2947,8 @@ blockquote {
     cursor: pointer;
 }
 
-.select-language {
-    width: 50%;
-    border-radius: 30px;
-    padding: 5px;
-    text-align: center;
-    cursor: pointer;
+.img-profile {
+    height: 160px;
+    width: 140px;
+    margin-left: 30px;
 }

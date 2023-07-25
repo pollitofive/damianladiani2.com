@@ -1,10 +1,10 @@
-<header id="site_header" class="header mobile-menu-hide">
+<header id="site_header" class="header mobile-menu-hide" style="padding-top: 35px">
     <livewire:header-content />
     <livewire:main-menu />
     <livewire:social-links />
-    <livewire:select-language />
     <div class="header-buttons">
-        <a href="#" target="_blank" class="btn btn-primary">Download CV</a>
+        <livewire:select-language />
+        <a href="{{ route('download',session()->get('locale')) }}" target="_blank" class="btn btn-primary">Download CV</a>
     </div>
 
     <div class="copyrights">© {{ date('Y') }} All rights reserved.</div>
