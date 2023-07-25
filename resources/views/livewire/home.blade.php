@@ -19,7 +19,11 @@
                     </div>
                 </div>
             </div>
-
+            @if(Session::has('success'))
+                <div id="message-sent" class="message-sent">
+                    Message sent successfully
+                </div>
+            @endif
         </div>
     </section>
     <!-- End of Home Subpage -->

@@ -16,3 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('contact',function(){
+    request()->validate([
+        'name' => 'required',
+        'email' => 'required',
+        'subject' => 'required',
+        'message' => 'required'
+    ]);
+
+    $headers = 'From: ' . request()->name . ' - ' . request()->email  . "\r\n";
+
+    mail('damianladiani@gmail.com','Message from contact form',request()->message, $headers);
+    return back()->with('success','Message sent successfully');
+})->name('contact');
