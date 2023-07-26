@@ -8,9 +8,9 @@ return [
             ['name' => 'Universidad Tecnológica Nacional (UTN)','title' => 'Técnico Superior en Programación', 'since' => 2008, 'until' => 2011],
             ['name' => 'Universidad Tecnológica Nacional (UTN)','title' => 'Técnico Superior en Sistemas Informáticos', 'since' => 2011, 'until' => 2013],
             ['name' => 'Highland','description' => 'Estudié 3 años en el instituto highland, creo que mi nivel es intermedio', 'since' => 2010, 'until' => 2013],
-            ['name' => 'Platzi','description' => 'Autodidacta', 'since' => 2016, 'until' => 'Siempre'],
-            ['name' => 'Laracast','description' => 'Autodidacta', 'since' => 2019, 'until' => 'Siempre'],
-            ['name' => 'Laraveldaily','description' => 'Autodidacta', 'since' => 2023, 'until' => 'Siempre']
+            ['name' => 'Platzi','description' => 'Autodidacta', 'since' => 2016, 'until' => 'Siempre','url' => 'https://www.platzi.com/p/damianladiani/'],
+            ['name' => 'Laracast','description' => 'Autodidacta', 'since' => 2019, 'until' => 'Siempre','url' => 'https://laracasts.com/@pollitofive'],
+            ['name' => 'Laraveldaily','description' => 'Autodidacta', 'since' => 2023, 'until' => 'Siempre','url' => 'https://laraveldaily.com']
         ]
     ],
     'experience' => [

@@ -18,7 +18,13 @@
                             <div class="timeline-item clearfix">
                                 <div class="left-part">
                                     <h5 class="item-period">{{ $study['since'] }} - {{ $study['until'] }}</h5>
-                                    <span class="item-company">{{ $study['name'] }}</span>
+                                    <span class="item-company">
+                                        @isset($study['url'])
+                                            <a href="{{ $study['url'] }}" target="_blank">{{ $study['name'] }}</a>
+                                        @else
+                                            {{ $study['name'] }}
+                                        @endisset
+                                    </span>
                                 </div>
                                 <div class="divider"></div>
                                 <div class="right-part">
