@@ -5,7 +5,7 @@ use App\Helpers\MyAge;
 return [
     'about' => 'About',
     'me' => 'me',
-    'description' => "I am a web developer, I worked in Argentinian Army (Ejército Argentino), Ministry of Defense (Ministerio de Defensa), Ministry of Segurity (Ministerio de Seguridad) and I’m currently working in the company Metrotel. I'm proactive and passionate person about programming and leadership. I love learning something new every day and be a better professional",
+    'description' => "I want to be able to work remotely in the framework that I am most passionate about (laravel), in a company anywhere in the world, and test the skills I have acquired in the last time. Although I feel more comfortable working as a backend developer, I also like to be able to provide solutions as a frontend developer.",
     'age' => 'Age',
     'age-desc' => (new MyAge)(),
     'residence' => 'Country',

@@ -5,7 +5,7 @@ use App\Helpers\MyAge;
 return [
     'about' => 'Sobre',
     'me' => 'mi',
-    'description' => 'Soy desarrollador web, trabajé en el Ejército Argentino, Ministerio de Defensa de la Nación, Ministerio de Seguridad de la Nación y actualmente estoy trabajando en la compañia Metrotel. Me considero una persona proactiva, apasionada de la programación y del liderazgo. Me gusta aprender algo nuevo todos los días para así ser un mejor profesional.',
+    'description' => 'Quiero poder trabajar a distancia en el framework que más me más me apasiona (laravel), en una empresa en cualquier parte del mundo, y poner a prueba las habilidades que he adquirido en el último tiempo. Aunque me siento más cómodo trabajando como backend, también me gusta poder aportar soluciones como desarrollador frontend.',
     'age' => 'Edad',
     'age-desc' => (new MyAge)(),
     'residence' => 'País',
