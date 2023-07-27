@@ -20,7 +20,7 @@ class SendEmailController extends Controller
 
         $headers = 'From: ' . request()->name . ' - ' . request()->email  . "\r\n";
 
-        mail('damianladiani@gmail.com','Message from contact form',request()->message, $headers);
+        mail('damianladiani@gmail.com',request()->subject,request()->message, $headers);
         return back()->with('success',trans('contact.message-sent'));
     }
 }
