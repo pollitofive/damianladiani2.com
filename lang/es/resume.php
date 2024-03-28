@@ -46,6 +46,8 @@ return [
             ['name' => 'Docker', 'rating' => 4],
             ['name' => 'Redis', 'rating' => 4],
             ['name' => 'Livewire', 'rating' => 3],
+            ['name' => 'Pest', 'rating' => 3],
+            ['name' => 'Filament', 'rating' => 3],
             ['name' => 'Tailwind', 'rating' => 3],
             ['name' => 'Inertia.js', 'rating' => 3],
         ]
