@@ -12,7 +12,7 @@
                     <div class="portfolio-content">
                         <div class="blog-masonry two-columns clearfix">
                             @foreach(trans('portfolio.projects') as $project)
-                                <div class="item post-1" style="position: absolute; left: 0px; top: 0px;">
+                                <div class="item post-1">
                                     <div class="blog-card">
                                         <div class="media-block">
                                             <a href="{{ $project['url'] }}" target="_blank">

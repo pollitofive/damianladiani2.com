@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\App;

@@ -65,6 +65,11 @@
                                 <div class="ci-text">
                                     <h4>{{ __('about.what-i-do.tool1.title') }}</h4>
                                     <p>{{ __('about.what-i-do.tool1.description') }}</p>
+                                    @foreach(__('about.what-i-do.tool1.list') as $item)
+                                        <div class="ci-text">
+                                            <li>{{ $item }}</li>
+                                        </div>
+                                    @endforeach
                                 </div>
                             </div>
                             <div class="info-block-w-icon">
@@ -72,6 +77,11 @@
                                 <div class="ci-text">
                                     <h4>{{ __('about.what-i-do.tool2.title') }}</h4>
                                     <p>{{ __('about.what-i-do.tool2.description') }}</p>
+                                    @foreach(__('about.what-i-do.tool2.list') as $item)
+                                        <div class="ci-text">
+                                            <li>{{ $item }}</li>
+                                        </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -86,6 +96,11 @@
                                 <div class="ci-text">
                                     <h4>{{ __('about.what-i-do.tool3.title') }}</h4>
                                     <p>{{ __('about.what-i-do.tool3.description') }}</p>
+                                    @foreach(__('about.what-i-do.tool3.list') as $item)
+                                        <div class="ci-text">
+                                            <li>{{ $item }}</li>
+                                        </div>
+                                    @endforeach
                                 </div>
                             </div>
                             <div class="info-block-w-icon">
@@ -93,6 +108,11 @@
                                 <div class="ci-text">
                                     <h4>{{ __('about.what-i-do.tool4.title') }}</h4>
                                     <p>{{ __('about.what-i-do.tool4.description') }}</p>
+                                    @foreach(__('about.what-i-do.tool4.list') as $item)
+                                        <div class="ci-text">
+                                            <li>{{ $item }}</li>
+                                        </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
